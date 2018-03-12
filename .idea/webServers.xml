@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4073952c-ccf8-4ad5-9e04-75a3ec1dd475" name="php_learn" url="http://localhost/cesi_php">
+        <fileTransfer port="0" mountedRoot="C:\wamp64\www\cesi_php" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
