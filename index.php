@@ -1,4 +1,3 @@
 <?php
-$page = $_GET['page'];
-
-echo $page;
+include "./includes/header.php";
+include "./includes/footer.php";
