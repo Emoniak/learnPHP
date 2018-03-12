@@ -1,4 +1,4 @@
 <?php
-$toto = "ceci est une chaine de charactere";
+$page = $_GET['page'];
 
-echo $toto;
+echo $page;
