@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="utf-8" />
+    <title>CESI AP - Blog/e-commerce</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+<div id="container">
 <?php
 include "./includes/header.php";
 
@@ -11,11 +20,9 @@ if(in_array($page, $files))
 else
     include "./includes/home.inc.php";
 
-
-
-
-
-
-
-
 include "./includes/footer.php";
+?>
+</div>
+</body>
+</html>
+
