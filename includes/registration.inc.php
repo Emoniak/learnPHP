@@ -40,8 +40,13 @@ if(isset($_POST['frmRegistration'])) {
     }
 
     else{
-        //injection base
-        echo "merci devotre inscription ;)";
+        $rec = new Queries();
+        $password = sha1($password);
+
+        $sql = "insert into t_users(usenom,useprenom,usemail,usepassword,id_groupes) VALUE ('$name','$firstName','$mail','$password',3)";
+
+        $rec -> insert($sql);
+        echo"<p> insert complete </p>";
     }
 
 }else{
