@@ -18,7 +18,7 @@ if (isset($_GET["page"])) {
 
 }
 else{
-    $check = 0;
+    $check = -1;
     $conn = new Queries();
 
     if (isset($_POST["id"]) || isset($_POST["mdp"])){
@@ -31,11 +31,13 @@ else{
 
     if ($check == 1)
         echo "vous este authentifier";
-    elseif ($check == 0 )
+    elseif ($check <= 0 )
     {
+        if ($check==0){
+            echo "<p>email ou mot de passe incorect</p>";
+            header('#');
+        }
         include "frmConnexion.php";
-        echo "email ou mot de passe incorect";
-        header('#');
 
     }
 
