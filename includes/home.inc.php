@@ -5,42 +5,25 @@
  * Date: 12/03/2018
  * Time: 14:47
  */
-if (isset($_GET["page"])) {
-    $token = $_GET["token"];
-    $valid = new checkInscription();
-    $check = $valid->valid($token);
+if ($_SESSION['login']==false){
+    if (isset($_GET["page"])) {
+        $token = $_GET["token"];
+        $valid = new checkInscription();
+        $check = $valid->valid($token);
 
-    if ($check == 1)
-        echo "<p>merci d'avoir confirmer votre compte</p>";
+        if ($check == 1)
+            echo "<p>merci d'avoir confirmer votre compte</p>";
+        else
+            echo "<p>erreur lors de la validation, votre compte est deja valider".
+                " si l'erreur perciste merci de contacter l'aide du site </p>";
+    }
     else
-        echo "<p>erreur lors de la validation, votre compte est deja valider".
-             " si l'erreur perciste merci de contacter l'aide du site </p>";
-
+        echo"<h1>HELLO</h1>";
 }
 else{
-    $check = -1;
-    $conn = new Queries();
+    $id = $_SESSION['id'];
+    echo "bonjour <strong> $id </strong>";
 
-    if (isset($_POST["id"]) || isset($_POST["mdp"])){
-        $id = $_POST["id"];
-        $password = sha1($_POST["mdp"]);
-        $sql = "select id_users from t_users where usemail = '$id' and usepassword = '$password'";
-        $check = $conn ->JCVD($sql) ->rowCount();
-
-    }
-
-    if ($check == 1)
-        echo "authentifié";
-    elseif ($check <= 0 )
-    {
-        if ($check==0){
-            echo "<p>email ou mot de passe incorect</p>";
-            header('#');
-        }
-        include "frmConnexion.php";
-
-    }
 
 
 }
-?>
