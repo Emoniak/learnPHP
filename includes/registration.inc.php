@@ -42,10 +42,21 @@ if(isset($_POST['frmRegistration'])) {
     else{
         $rec = new Queries();
         $password = sha1($password);
+        $token = uniqid(sha1(date('Y-m-d|h:m:s')),false);
 
-        $sql = "insert into t_users(usenom,useprenom,usemail,usepassword,id_groupes) VALUE ('$name','$firstName','$mail','$password',3)";
+        $sql = "insert into t_users(usenom,useprenom,usemail,usepassword,usertoken,id_groupes) VALUE ('$name','$firstName','$mail','$password','$token',3)";
 
         $rec -> insert($sql);
+
+        $message = "<h1>Wunderbarr !!!! </h1>";
+        $message .="<p>Vous êtes inscrit!!!!</p>";
+        $message .="<p>Merci de cliquer sur le lien pour valider</p>";
+        $message .= "<p><a href='http://localhost/cesi_php/index.php?'";
+        $message .= "page=validationInscription&amp;token=";
+        $message .= $token;
+        $message .= "' target='_bank'>Lien</a>";
+
+        mail($mail,'Confirmation compte',$message);
         echo"<p> insert complete </p>";
     }
 

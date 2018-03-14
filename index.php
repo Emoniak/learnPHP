@@ -1,4 +1,5 @@
 <?php
+ini_set('smtp_port',1025);
 include "./functions/classAutoLoader.php";
 spl_autoload_register('classAutoLoader');
 ?>
@@ -14,7 +15,6 @@ spl_autoload_register('classAutoLoader');
 <?php
 include "./includes/header.php";
 
-$test = new Queries();
 
 $page = $_GET['page'] ?? "";
 $page = "./includes/" . $page . ".inc.php";
