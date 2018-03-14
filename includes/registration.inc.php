@@ -54,7 +54,7 @@ if(isset($_POST['frmRegistration'])) {
         $message .= "<p><a href='http://localhost/cesi_php/index.php?'";
         $message .= "page=validationInscription&amp;token=";
         $message .= $token;
-        $message .= "' target='_bank'>Lien</a>";
+        $message .= "' target='_bank'>Lien</a></p>";
 
         mail($mail,'Confirmation compte',$message);
         echo"<p> insert complete </p>";
@@ -63,6 +63,4 @@ if(isset($_POST['frmRegistration'])) {
 }else{
     include "frmRegistration.php";
 }
-
-
 ?>

@@ -1,5 +1,6 @@
 <?php
 ini_set('smtp_port',1025);
+date_default_timezone_set('Erope/Paris');
 include "./functions/classAutoLoader.php";
 spl_autoload_register('classAutoLoader');
 ?>
@@ -14,18 +15,7 @@ spl_autoload_register('classAutoLoader');
 <div id="container">
 <?php
 include "./includes/header.php";
-
-
-$page = $_GET['page'] ?? "";
-$page = "./includes/" . $page . ".inc.php";
-
-$files = glob("./includes/*.inc.php");
-
-if(in_array($page, $files))
-    include $page;
-else
-    include "./includes/home.inc.php";
-
+CallPage::display();
 include "./includes/footer.php";
 ?>
 </div>
