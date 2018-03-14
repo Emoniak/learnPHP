@@ -30,7 +30,7 @@ else{
     }
 
     if ($check == 1)
-        echo "vous este authentifier";
+        echo "authentifié";
     elseif ($check <= 0 )
     {
         if ($check==0){
