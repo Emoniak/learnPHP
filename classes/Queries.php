@@ -29,6 +29,11 @@ class Queries
         return $this->db -> exec($sql);
     }
 
+    function JCVD($sql)
+    {
+        return $this->db -> query($sql);
+    }
+
     public function __destruct()
     {
         unset($this->db);

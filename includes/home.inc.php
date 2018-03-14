@@ -5,7 +5,6 @@
  * Date: 12/03/2018
  * Time: 14:47
  */
-echo "<h1> hello </h1>";
 if (isset($_GET["page"])) {
     $token = $_GET["token"];
     $valid = new checkInscription();
@@ -19,7 +18,24 @@ if (isset($_GET["page"])) {
 
 }
 else{
-    echo "bonjour";
+    $check = -1;
+    include "frmConnexion.php";
+    $conn = new Queries();
+
+    if (isset($_POST["id"]) || isset($_POST["mdp"])){
+        $id = $_POST["id"];
+        $password = sha1($_POST["mdp"]);
+        $sql = "select id_users from t_users where usemail = '$id' and usepassword = '$password'";
+        $check = $conn ->JCVD($sql) ->rowCount();
+
+    }
+
+    if ($check == 1)
+        echo "vous este authentifier";
+    elseif ($check == 0){
+        echo "email ou mot de passe incorect";
+        header('#');
+    }
 
 }
 ?>
