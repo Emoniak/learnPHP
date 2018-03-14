@@ -19,7 +19,7 @@ if (isset($_POST["id"]) || isset($_POST["mdp"])){
 if ($check == 1){
     $_SESSION['login'] = true;
     $_SESSION['id'] = $id;
-    echo "authentifié";
+    echo "<a href='index.php?page=home'>revenir au menu </a>";
 }
 elseif ($check <= 0 )
 {
