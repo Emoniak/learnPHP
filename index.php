@@ -1,6 +1,6 @@
 <?php
 ini_set('smtp_port',1025);
-date_default_timezone_set('Erope/Paris');
+date_default_timezone_set('Europe/Paris');
 include "./functions/classAutoLoader.php";
 spl_autoload_register('classAutoLoader');
 ?>

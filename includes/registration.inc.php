@@ -48,13 +48,13 @@ if(isset($_POST['frmRegistration'])) {
 
         $rec -> insert($sql);
 
-        $message = "<h1>Wunderbarr !!!! </h1>";
-        $message .="<p>Vous êtes inscrit!!!!</p>";
-        $message .="<p>Merci de cliquer sur le lien pour valider</p>";
-        $message .= "<p><a href='http://localhost/cesi_php/index.php?";
-        $message .= "page=validationInscription&amp;token=";
-        $message .= $token;
-        $message .= "' target='_bank'>Lien</a></p>";
+        $message = "<h1>Wunderbarr !!!! </h1>"
+                    ."<p>Vous êtes inscrit!!!!</p>"
+                    ."<p>Merci de cliquer sur le lien pour valider</p>"
+                    ."<p><a href='http://localhost/cesi_php/index.php?"
+                    ."page=validationInscription&amp;token="
+                    .$token
+                    ."' target='_bank'>Lien</a></p>";
 
         mail($mail,'Confirmation compte',$message);
         echo"<p> insert complete </p>";
