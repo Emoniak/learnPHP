@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9a6da10-6552-4941-b6ac-af0225272b63" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/includes/frmConnexion.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/classes/Queries.php" afterPath="$PROJECT_DIR$/classes/Queries.php" />
       <change beforePath="$PROJECT_DIR$/includes/home.inc.php" afterPath="$PROJECT_DIR$/includes/home.inc.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,16 +27,16 @@
       <file leaf-file-name="home.inc.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/includes/home.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="631">
-              <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+            <state relative-caret-position="581">
+              <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="37" selection-end-column="20" />
               <folding>
-                <marker date="1521026267656" expanded="true" signature="690:725" ph="select id_us... t_users" />
-                <marker date="1521026267656" expanded="true" signature="690:736" ph="select id_us... t_users" />
-                <marker date="1521026267656" expanded="true" signature="690:740" ph="select id_us... t_users" />
-                <marker date="1521026267656" expanded="true" signature="690:758" ph="select id_us... t_users" />
-                <marker date="1521026267656" expanded="true" signature="690:759" ph="select id_us... t_users" />
-                <marker date="1521026267656" expanded="true" signature="690:760" ph="select id_us... t_users" />
-                <marker date="1521026267656" expanded="true" signature="690:770" ph="select id_us... t_users" />
+                <marker date="1521026592200" expanded="true" signature="657:692" ph="select id_us... t_users" />
+                <marker date="1521026592200" expanded="true" signature="657:703" ph="select id_us... t_users" />
+                <marker date="1521026592200" expanded="true" signature="657:707" ph="select id_us... t_users" />
+                <marker date="1521026592200" expanded="true" signature="657:725" ph="select id_us... t_users" />
+                <marker date="1521026592200" expanded="true" signature="657:726" ph="select id_us... t_users" />
+                <marker date="1521026592200" expanded="true" signature="657:727" ph="select id_us... t_users" />
+                <marker date="1521026592200" expanded="true" signature="657:737" ph="select id_us... t_users" />
               </folding>
             </state>
           </provider>
@@ -280,7 +278,7 @@
       <updated>1520849499851</updated>
       <workItem from="1520849501857" duration="209000" />
       <workItem from="1520851382543" duration="12434000" />
-      <workItem from="1520948577872" duration="19968000" />
+      <workItem from="1520948577872" duration="20257000" />
     </task>
     <task id="LOCAL-00001" summary="first steep">
       <created>1520851726190</created>
@@ -415,11 +413,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521023031287</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="authentication">
+      <created>1521026337636</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1521026337636</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32776000" />
+    <option name="totallyTimeSpent" value="33065000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -472,7 +477,8 @@
     <MESSAGE value="fix link" />
     <MESSAGE value="fix" />
     <MESSAGE value="email validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="email validation" />
+    <MESSAGE value="authentication" />
+    <option name="LAST_COMMIT_MESSAGE" value="authentication" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -494,13 +500,13 @@
         <state relative-caret-position="225">
           <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
           <folding>
-            <marker date="1521026267656" expanded="true" signature="690:725" ph="select id_us... t_users" />
-            <marker date="1521026267656" expanded="true" signature="690:736" ph="select id_us... t_users" />
-            <marker date="1521026267656" expanded="true" signature="690:740" ph="select id_us... t_users" />
-            <marker date="1521026267656" expanded="true" signature="690:758" ph="select id_us... t_users" />
-            <marker date="1521026267656" expanded="true" signature="690:759" ph="select id_us... t_users" />
-            <marker date="1521026267656" expanded="true" signature="690:760" ph="select id_us... t_users" />
-            <marker date="1521026267656" expanded="true" signature="690:770" ph="select id_us... t_users" />
+            <marker date="1521026592200" expanded="true" signature="657:692" ph="select id_us... t_users" />
+            <marker date="1521026592200" expanded="true" signature="657:703" ph="select id_us... t_users" />
+            <marker date="1521026592200" expanded="true" signature="657:707" ph="select id_us... t_users" />
+            <marker date="1521026592200" expanded="true" signature="657:725" ph="select id_us... t_users" />
+            <marker date="1521026592200" expanded="true" signature="657:726" ph="select id_us... t_users" />
+            <marker date="1521026592200" expanded="true" signature="657:727" ph="select id_us... t_users" />
+            <marker date="1521026592200" expanded="true" signature="657:737" ph="select id_us... t_users" />
           </folding>
         </state>
       </provider>
@@ -693,16 +699,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/home.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="631">
-          <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+        <state relative-caret-position="581">
+          <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="37" selection-end-column="20" />
           <folding>
-            <marker date="1521026267656" expanded="true" signature="690:725" ph="select id_us... t_users" />
-            <marker date="1521026267656" expanded="true" signature="690:736" ph="select id_us... t_users" />
-            <marker date="1521026267656" expanded="true" signature="690:740" ph="select id_us... t_users" />
-            <marker date="1521026267656" expanded="true" signature="690:758" ph="select id_us... t_users" />
-            <marker date="1521026267656" expanded="true" signature="690:759" ph="select id_us... t_users" />
-            <marker date="1521026267656" expanded="true" signature="690:760" ph="select id_us... t_users" />
-            <marker date="1521026267656" expanded="true" signature="690:770" ph="select id_us... t_users" />
+            <marker date="1521026592200" expanded="true" signature="657:692" ph="select id_us... t_users" />
+            <marker date="1521026592200" expanded="true" signature="657:703" ph="select id_us... t_users" />
+            <marker date="1521026592200" expanded="true" signature="657:707" ph="select id_us... t_users" />
+            <marker date="1521026592200" expanded="true" signature="657:725" ph="select id_us... t_users" />
+            <marker date="1521026592200" expanded="true" signature="657:726" ph="select id_us... t_users" />
+            <marker date="1521026592200" expanded="true" signature="657:727" ph="select id_us... t_users" />
+            <marker date="1521026592200" expanded="true" signature="657:737" ph="select id_us... t_users" />
           </folding>
         </state>
       </provider>
