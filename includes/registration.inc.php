@@ -51,7 +51,7 @@ if(isset($_POST['frmRegistration'])) {
         $message = "<h1>Wunderbarr !!!! </h1>";
         $message .="<p>Vous êtes inscrit!!!!</p>";
         $message .="<p>Merci de cliquer sur le lien pour valider</p>";
-        $message .= "<p><a href='http://localhost/cesi_php/index.php?'";
+        $message .= "<p><a href='http://localhost/cesi_php/index.php?";
         $message .= "page=validationInscription&amp;token=";
         $message .= $token;
         $message .= "' target='_bank'>Lien</a></p>";
