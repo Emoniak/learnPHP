@@ -10,7 +10,7 @@ echo "<h1> inscription </h1>";
 if(isset($_POST['frmRegistration'])) {
     $name = $_POST['name'] ?? "";
     $firstName = $_POST['firstName'] ?? "";
-    $mail = $_POST['mail'] ?? "";
+    $mail = trim($_POST['mail']) ?? "";
     $password = $_POST['password'] ?? "";
 
     $erreur = array();
