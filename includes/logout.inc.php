@@ -7,4 +7,4 @@
  */
 
 $_SESSION['login'] = false;
-echo "<a href =\"index.php?page=home\">revenir au menu</a>";
+echo '<a href ="../cesi_php">revenir au menu</a>';
