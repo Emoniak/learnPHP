@@ -21,6 +21,8 @@ if(isset($_POST['frmRegistration'])) {
         array_push($erreur,"veuiller saisir un prenom");
     if($mail == "")
         array_push($erreur,"veuiller saisir un mail");
+    if(filter_var($mail,FILTER_VALIDATE_EMAIL))
+        array_push($erreur,"veuiller saisir une adesse correct");
     if($password == "")
         array_push($erreur,"veuiller saisir un mdp");
 

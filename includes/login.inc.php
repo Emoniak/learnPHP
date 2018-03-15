@@ -9,10 +9,12 @@ $check = -1;
 $conn = new Queries();
 
 if (isset($_POST["id"]) || isset($_POST["mdp"])){
-    $id = $_POST["id"];
-    $password = sha1($_POST["mdp"]);
-    $sql = "select id_users from t_users where usemail = '$id' and usepassword = '$password'";
-    $check = $conn ->JCVD($sql) ->rowCount();
+    if (filter_var($_POST["id"],FILTER_VALIDATE_EMAIL)){
+        $id = $_POST["id"];
+        $password = sha1($_POST["mdp"]);
+        $sql = "select id_users from t_users where usemail = '$id' and usepassword = '$password'";
+        $check = $conn ->JCVD($sql) ->rowCount();
+    }
 
 }
 
